@@ -1,0 +1,48 @@
+  
+body{
+ background-color: rgb(231, 234, 201) ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+        h1 {
+          color: rgb(48, 49, 1);
+          font-size: 95px;
+        }  
+        h2 {
+          color: rgb(48, 49, 1);
+          font-size: 50px;
+        }
+.center{
+  text-align: center;
+}
+.container-centralizado{
+  text-align: center;
+}
+form{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+border-radius: 10px;
+width: 300px;
+}
+.form-item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+button{
+font-size: 45px;
+}
+select{
+  font-size: 20px;
+}
+option{
+  font-size: 13px;
+}
