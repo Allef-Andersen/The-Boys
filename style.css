@@ -1,4 +1,11 @@
-  
+section{
+  background-color: #fff;       
+  padding: 30px;              
+  max-width: 500px;        
+  width: 100%;                 
+  border-radius: 12px;         
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 body{
  background-color: rgb(231, 234, 201) ;
  display: flex;
@@ -7,12 +14,13 @@ body{
 }
         h1 {
           color: rgb(48, 49, 1);
-          font-size: 95px;
+          font-size: 60px;
         }  
         h2 {
           color: rgb(48, 49, 1);
-          font-size: 50px;
+          font-size: 30px;
         }
+
 .center{
   text-align: center;
 }
