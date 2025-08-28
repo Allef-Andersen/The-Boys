@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avaliação de Produtos</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f4f4f9;
+margin: 0;
+padding: 20px;
+}
+.container {
+max-width: 600px;
+margin: auto;
+background: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h1 {
+text-align: center;
+}
+label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+}
+input, select, textarea, button {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 14px;
+}
+button {
+background: #4CAF50;
+color: #fff;
+font-weight: bold;
+cursor: pointer;
+border: none;
+}
+button:hover {
+background: #45a049;
+}
+.stars {
+display: inline-flex;
+gap: 5px;
+margin-top: 10px;
+flex-direction: row-reverse;
+}
+.stars input {
+display: none;
+}
+.stars label {
+font-size: 24px;
+color: #ccc;
+cursor: pointer;
+}
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+color: gold;
+}
+</style>
+ </head>
+    <body>
+<div class="container">
+<h1>Avalie o Produto</h1>
+ <form>
+<label for="nome">Seu Nome:</label>
+ <input type="text" id="nome" name="nome" required>
+
+<label for="nome">Nome do Produto:</label>
+ <input type="text" id="Produto" name="Produto" required>
+
+<label for="foto">Adicione uma foto do produto:</label>
+  <input type="file" id="foto" name="foto" accept="image/*">
+
+<label>Sua Nota:</label>
+<div class="stars">
+<input type="radio" id="estrela5" name="estrela" value="5">
+ <label for="estrela5">★</label>
+<input type="radio" id="estrela4" name="estrela" value="4">
+ <label for="estrela4">★</label>
+<input type="radio" id="estrela3" name="estrela" value="3">
+ <label for="estrela3">★</label>
+<input type="radio" id="estrela2" name="estrela" value="2">
+ <label for="estrela2">★</label>
+<input type="radio" id="estrela1" name="estrela" value="1">
+ <label for="estrela1">★</label>
+</div>
+
+<label for="comentario">Comentário:</label>
+ <textarea id="comentario" name="comentario" rows="4" placeholder="Digite sua opinião aqui..."></textarea>
+
+    <button type="submit">Enviar Avaliação</button>
+</html>
